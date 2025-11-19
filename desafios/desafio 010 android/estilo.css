@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/*Import da Font 
+Passo a passo para incluir no css:
+1- Escolhe a font.
+2- Get embed code.
+3- @import
+4- Cole apenas o que tiver no style e adicione aqui*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'fonte personalizada';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ /* Facilita na distribuição de elementos que você vai usar muito*/
+:root {
+    --cor0background: #84bfe1be;
+    --cor1header: #034f96;
+    --cor2header: #03305a;
+    --cor3title: #1d035a;
+    --cor4title: #1e0558;
+    --cor4stronga: #043c5cea;
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'fonte personalizada', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor0background);
+}
+
+p {
+    font-size: 1.3em;
+    margin: 15px 0;
+    text-align: justify;
+    line-height: 1.5em;
+    text-indent: 30px;
+}
+
+a.externo::after {
+    content: '🔗';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1header), var(--cor2header));
+    min-height: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+header > h1 {
+    font-family: var(--fonte-destaque);
+    color: white;
+    margin-bottom: 10px;
+    font-size: 3em;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.329);
+    font-weight: normal;
+}
+
+header > p {
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.329);
+    margin: auto;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor2header);
+    padding: 10px;
+    box-shadow: 0px 7px 11px;
+    font-family: var(--fonte-padrao);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: var(--cor1header);
+    color: var(--cor4title);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(211, 222, 233, 0.877);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: var(--fonte-padrao);
+}
+
+main h1 {
+    color: var(--cor3title);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--cor4stronga);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor1header), transparent);
+    text-indent: 10px;
+    font-weight: normal;
+}
+
+main strong {
+    color: var(--cor4title);
+    font-weight: bold;
+    padding: 2px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor3title);
+    background: rgb(188, 188, 221);
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4title);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pq {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main h2 {
+    font-family: var(--fonte-android);
+}
+
+div.video {
+    background-color: var(--cor3title);
+    margin: 0 -20px 30px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 58%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(134, 134, 236);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.295);
+}
+
+aside h3 {
+    background: var(--cor1header);
+    padding: 10px;
+    color: white;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+aside ul {
+    /* é bom para quando  a bolinha da lista não se adequa a borda */
+    list-style-position: inside;
+    /* dividi a lista de acordo com a quantidade de coluna que colocar em número */
+    list-style-type: '\2714';
+    columns: 2;
+    font-size: 1.2em;
+    list-style: none;
+}
+
+aside li:before {
+    content: '✔  ';
+    margin-right: 6px;
+    font-weight: bold;
+}
+
+aside a {
+    background-color: rgba(110, 110, 228, 0.788);
+}
+footer {
+    background-color: var(--cor3title);
+    color: var(--cor0background);
+    text-align: center;
+    font-size: 1.1em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}

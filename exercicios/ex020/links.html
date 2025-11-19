@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Remove o marcador padrão de todos os itens de lista */
+        li {
+        list-style: none;
+        padding-left: 0; /* Ajuda a alinhar a lista corretamente */
+        }
+
+        h1 {
+            font-size: 25px;
+            background: linear-gradient(to right, #e65e3c, #3c4eee );
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent; 
+        }
+        /* Adiciona um pseudo-elemento com um novo símbolo */
+        li::before {
+        content: " ✉ ";
+        color: rgb(255, 8, 0);
+        font-weight: bold;
+        }
+
+        li::after {
+            content: ' ☑ ';
+            color: rgb(255, 8, 0);
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        /* :: é pseudo-elemento*/
+
+        a::before {
+            content: ' ♡ ';
+        }
+    
+        a::after {
+            content: ' ♡ ';
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(88, 2, 2);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <li class="test1"><a href="https://www.facebook.com/profile.php?id=100086721361616&locale=pt_BR" target="blank
+    ">Facebook</a></li>
+    <li><a href="https://www.instagram.com/sousas.dani/" target="blank
+    ">Instagram</a></li>
+</body>
+</html>

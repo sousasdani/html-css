@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(177, 221, 221);
+        }
+        header {
+            background-color: rgba(253, 253, 253, 0.432);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgba(179, 152, 152, 0.432);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(141, 114, 114, 0.432);
+        }
+        nav li {
+            color: rgba(253, 253, 253, 0.632);  
+        }
+        nav > li a {
+            text-decoration: none;
+            color: rgb(56, 54,  54);
+            font-weight: bold;
+            margin-right: 4px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: rgba(253, 253, 253, 0.432);
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: rgba(179, 152, 152, 0.356);
+            padding: 4px;
+        }
+        article > aside {
+            background-color: rgba(139, 118, 118, 0.137);
+            padding: 1px;
+        }
+        footer {
+            background-color: rgba(56, 56, 56, 0.26);
+            color: rgb(27, 2, 20);
+            text-align: center;
+            padding: 1px;
+            margin: 6px;
+        }
+
+    footer > p {
+        margin: 0px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <p>Acesse os links a seguir pra mais informações:</p>
+        <nav>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Quadripacks → Triplopacks → Booster Box → Elite Trainer Box</p>
+        </section>
+
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre meus mimos atuais</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quis corrupti. Ipsa amet, sunt, et molestias omnis nesciunt unde eligendi similique quo vero quaerat molestiae eum hic dicta commodi aliquam.</p>
+                <aside>
+                    <p>Artigo escrito por Danielle</p>
+                </aside>
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Danielle Silva</p>
+    </footer>
+</body>
+</html>

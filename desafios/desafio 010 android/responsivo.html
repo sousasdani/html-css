@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body {
+            background-color: grey;
+        }
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /*min e max widht é uma das melhores formas de trabalhar a responsividade sem que tenha um texto ficando ficando cada vez mais pequeno que sai de uma tela pequena para uma tela maior*/
+            min-width: 280px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /*IMAGEM: Quanto a imagem só precisa colocar widht 100%, mas tem uma outra maneira melhor de fazer isso, pois a imagem também fica curta em telas menores, ao meu ver não é tão confortável de usar, eu posso no meu html usar o picture com o source max-widht, dividindo a atenção entre em uma imagem pequena e uma grande - exatamente o que eu fiz no meu desafio*/
+        picture img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com responsividade</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum, recusandae pariatur. Placeat, voluptatum aliquid ex dolores maxime incidunt delectus repellendus amet tempora quis dicta dignissimos quibusdam asperiores sequi corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ullam accusamus mollitia eligendi nostrum asperiores dolores omnis, dignissimos sapiente amet aliquam vel rerum quos quae nulla hic facere sint corporis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus veniam, quibusdam at qui enim magnam ipsam error beatae itaque rerum dignissimos? Eos nemo itaque iure debitis odit, similique in commodi.</p>
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+                <img src="imagens/irina-blok.jpg" alt="Irina Blok, criadora do Bugdroid">
+            </picture>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In eum saepe mollitia doloribus eaque quasi laudantium odit error, est dolorem? A quibusdam dolor voluptas aliquam numquam commodi quas repudiandae nostrum!Lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem voluptatum incidunt enim, ipsum amet qui temporibus animi obcaecati, magni cupiditate id facilis eos autem. Inventore officia sint odio reiciendis dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque pariatur animi dignissimos. Animi, nobis odit debitis sed sapiente incidunt facilis, aspernatur quidem eaque aut maxime pariatur deleniti ut similique. Nostrum!</p>
+    </main>
+</body>
+</html>

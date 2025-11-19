@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 4</title>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+</head>
+<style>
+    .blue {
+        color: #00A3C6;
+        font-size: 20px;
+    }
+    .blue:hover {
+        cursor: pointer;
+        color: #4e5ff7;
+        border-bottom: 4px solid rgb(78, 95, 247);
+    }
+    .box {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        justify-content: space-around;
+        background-color: #282828;
+        padding: 0.1px;
+        gap:0.1;
+    }
+    .coluna {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-lateral- {
+        font-size: 24px;
+        height: 70px;
+        width: 100px;
+        position: relative;
+        top: 30px;
+        left: 25px;
+    }
+     .text {
+        font-size: 10px;
+    }
+    .item-menu {
+        display:none;
+    }
+    .text-link {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    .search {
+        font-size: 16px;
+        height: 80px;
+        width: 95px;
+        position: relative;
+        top: 5px;
+        left: 1200px;
+    }
+</style>
+<body>
+    <nav class="menu-lateral">
+        <div class="menu-lateral-">
+                  <span><i class="bi bi-list"></i></span>
+                  <span class="text">MENU</span>
+
+                  <span class="search"><i class="bi bi-search"></i>
+</span>
+        </div>
+
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-arrow-bar-right"></i></span>
+                    <span class="text-link">RPG</span>
+                </a>
+            </li>
+            <!--# significa campo vazio-->
+
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon"><i class="bi bi-arrow-bar-right"></i></span>
+                    <span class="text-link">Mangá</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr> 
+
+    <div class="box">
+        <div class="coluna">
+            <h2 class="blue">Animes</h2>
+        </div>
+        <div class="coluna">
+            <h2 class="blue">Mangás</h2>
+        </div>
+        <div class="coluna">
+            <h2 class="blue">Manhwa</h2>
+        </div>
+        <div class="coluna">
+            <h2 class="blue">Traillers</h2>
+        </div>
+        <div class="coluna">
+            <h2 class="blue">Sobre mim</h2>
+        </div>
+    </div>
+</body>
+</html>

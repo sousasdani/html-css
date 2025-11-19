@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ligações em toda parte</title>
+</head>
+<body>
+    <h1>Ligações em toda parte</h1>
+    <h2>Usando links externos</h2>
+
+    <h4>Exemplo de link que abre em outra guia</h4>
+    <h5>Quando o link é externo é sempre recomendável abri o link em uma outra guia</h5>
+
+    <p>Você pode acessar o meu <a href="http://www.youtube.com/@dani.s.e " target="_blank" rel="external">youtube</a></p>
+
+    <h4>Exemplo de link que abre dentro da mesma guia</h4>
+    <p>Voce pode também acessar o meu <a href="https://www.instagram.com/sousas.dani?igsh=MXUwejl5dzEzNTFrMg=="> instagram</a></p>
+
+    <h1>Usando links internos</h1>
+    <p>Está página é um oferecimento de <a href="https://www.hostnet.com.br" target="blank" rel="nofollow">hostnet</a> que está me ajudando muito ao patrocinar o canal cursoemvideo</p>
+
+<!--Ao adicionar a tag nofllow estarei declarando ao navegador para não seguir a página destinada, ou seja, adicionou, mas não tem garantia nenhuma sobre ela.
+É usado geralmente quando você está sendo patrocinado e que você não um aval.-->
+
+    <p>Está é a minha primeira página do site, se você quiser pode acessar também a minha <a href="pag002.html" rel="next" target="_self">segunda página</a></p>
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+    <h1>Links para downloads</h1>
+    <ul>
+        <li type="square">Link vazio</li>
+        <ol>
+            <li><a href="#">Baixar o livro PDF</a></li>
+            <li><a href="#">Baixar livro compactado em Zip</a></li>
+        </ol> 
+        <br>
+        <!--Ao adicionar a # significa que não há arquivo algum para mostrar, ou seja, está um link vazio.-->
+        <li>Link não vazio</li>
+        <ol>
+            <li><a href="Livro/1 Duna (Cronicas de Duna 1) - Frank Herbert.pdf" download="Crônicas de Duna 1 - Frank Helbert.pdf " type="application/pdf">Baixar o livro em PDF</a></li>
+            <li><a href="Livro/1 Duna (Cronicas de Duna 1) - Frank Herbert.zip" type="application/zip">Baixar livro compactado em Zip</a></li>
+
+            <!--Nesse caso, eu não repeti o atributo download no arquivo zip, as acredito que deva repetir.-->
+        </ol>
+    </ul>
+</body>
+</html>

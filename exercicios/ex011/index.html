@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <h4 style="color: brown;"><q>Criando o código básico em HTML5</q></h4>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.</p>
+
+        <h4 style="color: brown;"><q>Criando a tag <mark style="background-color: aqua;">picture</mark> e vários <mark style="background-color: aqua;">sources</mark> para aprimorar os tamanhos diferentes para demais dispositivos</q></h4>
+        
+        <h4 style="color: brown;"><q>Na criação de vários Sources, o tamanho das imagens aprimoradas devem estar na ordem, ou seja, do pequeno para o maior, então quanto mais pequeno for querer a imagem, mais na frente ela fica.</q></h4>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>Reproduzir audio em HTML5.</p>
+
+    <h5>Primeira forma (não eteve funcionando para o professor Guanabara, devo testar depois quando tiver um fone)</h5>
+
+    <audio src="midia/jazz-tape-andrew-huang.mp3" controls autoplay></audio>
+
+    <h5>Segunda forma (Funcionou para o professor Guanabara)</h5>
+    <q style="background-color: #f4dcf1;">Não estou conseguindo aqui</q>
+
+    <p>Observação: Existem navegadores que não possui compatibilidade com alguns formatos de arquivos, inclusive com o famoso MP3. Mas ainda simpode usar outros formatos de arquivos, mas para isso terá que ter o formato MP3 (mpeg), WAV, OGG.</p>
+
+    <audio preload="metadata" autoplay controls>
+
+        <source src="midia/jazz-tape-andrew-huang.mpeg" type="audio/mpeg">
+        <source src="midia/jazz-tape-andrew-huang.ogg" type="audio/ogg">
+        <source src="midia/jazz-tape-andrew-huang.wav" type="audio/wav">
+
+         <p>Caso nenhuma opção de áudio apareça acima, infelizmente isso signfica que o navegador a qual está tentando ouvir não suporta o elemento <code>audio</code>. 
+        
+        <a href="midia/jazz-tape-andrew-huang.mp3">Clique aqui para baixar o arquivo MP3.</a></p>
+    </audio>
+   
+</body>
+</html>

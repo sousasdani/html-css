@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas HTML</title>
+</head>
+<body>
+   <h1>Trabalhando com listas</h1>
+   <h2>Listas Ordenadas</h2>
+    <h3>Números &lt;ol&gt; - &lt;li&gt;</h3>
+   <ol>
+       <li>Acordar</li>
+       <li>Alongar</li>
+       <li>Tomar café</li>
+       <li>Estudar</li>
+       <li>Almoçar</li>
+       <li>Tarefas</li>
+       <li>Jantar</li>
+       <li>Alongar</li>
+       <li>Dormir</li>
+   </ol>
+
+   <h3>Números Romanos &lt;ol type="i"&gt;</h3>
+   <ol type="i"> <!--1 A a I i-->
+    <li>Acordar</li>
+    <li>Alongar</li>
+    <li>Tomar café</li>
+    <li>Estudar</li>
+    <li>Almoçar</li>
+    <li>Tarefas</li>
+    <li>Jantar</li>
+    <li>Alongar</li>
+    <li>Dormir</li>
+</ol>
+
+<h2>Listas não Ordenadas</h2> 
+<!--disc circle square-->
+<p>A tag &lt;ul&gt; e &lt;ol&gt; pelo como que pode ver, dão espaçamentos da visualização do site para que não fique muito grudado no limite da tela, exemplo: 
+    <br>Sem:</p>
+<li>Pão</li>
+<li>Feijão</li>
+<li>Papel higiênico</li>
+<li>Alface</li>
+
+<br>Com:
+    <ul>
+        <li>Pão</li>
+        <li>Feijão</li>
+        <li>Papel higiênico</li>
+        <li>Alface</li>
+    </ul>
+
+<p>O exemplo acima é um exemplo de lista não ordenada que tem uma bolinha preta para lista. </p>
+
+&lt;ul type="square"&gt;
+<ul type="square">
+    <li>Pão</li>
+    <li>Feijão</li>
+    <li>Papel higiênico</li> 
+    <li>Alface</li>
+</ul>
+
+<p>&lt;circle&gt;</p>
+
+<ul type="circle">
+    <li>Pão</li>
+    <li>Feijão</li>
+    <li>Papel higiênico</li>
+    <li>Alface</li>
+</ul>
+
+<p>&lt;disc&gt;</p>
+
+<ul type="disc">
+    <li>Pão</li>
+    <li>Feijão</li>
+    <li>Papel higiênico</li>
+    <li>Alface</li>
+</ul>
+
+<h2>Meus hobbies favoritos</h2>
+<ol>
+    <li>Antigos</li>
+    <ol>
+        <li>Escrever</li>
+        <li>Bordar</li>
+        <li>Dançar</li>
+    </ol>
+
+    <p>Esse estilo é dado como <mark>aninhamento</mark>, pois uma coisa está dentro da outra. assim como as listas anteriores, ele também pode usar outros tipos, desde as alternativas, os números e até mesmo símbolos.</p>
+
+    <li>Novos</li>
+    <ol>
+        <li>Jogar minecraft</li>
+        <li>Estudar html</li>
+        <li>Criar projetos</li>
+    </ol>
+
+    <p>Exemplo do comentário em três formas:</p>
+   
+    <li>Lista com alternativas que</li>
+    <ol type="a">
+        <li>Escrever é muito bom</li>
+        <li>Se exercitar previne sedentarismo</li>
+        <li>Abacaxi é uma delícia</li>
+    </ol><br>
+
+    <li>Continuação das alternativas</li>
+    <ol>
+        <li>Minecraft é o jogo do momento.</li>
+        <li>Estou amando estudar programação</li>
+        <li>Animal crossing me chama a atenção</li>
+    </ol>
+
+    <h4>Lista com alternativas que continuam independente se é outro parâmetro</h4>
+
+    <li>Alternativas que se complementam</li>
+    <ol type="a">
+        <li>Organização é tudo</li>
+        <li>Estou muito feliz, pois aprendi algo novo</li>
+        <li>Ja disse que estou gostando do animal crossing?</li>
+    </ol>
+<br>
+    <li>Continuação das alternativas que complementam</li>
+    <ol type="a" start="4">
+        <li>Estou digitando coisas aleatórias</li>
+        <li>Essa lista está assim graças ao código &lt;ol type="a" start="4"&gt;</li>
+    </ol>
+
+    <p>Isso é apenas uma curiosidade sendo passada, mas devemos prosseguir fazendo como o primeiro exemplo onde não teve continuação das alternativas.</p>
+</ol>
+
+<h2>Meus Projetos favoritos</h2>
+<ol>
+    <li>Aleatório</li>
+    <ol>
+        <li>Projeto ODD</li>
+        <li>Projeto 002</li>
+    </ol>
+    <li>Controlados</li>
+    <ol>
+        <li>Projeto AD'P</li>
+        <li>Projeto e Rotina</li>
+    </ol>
+<hr>
+    <p>Alteração logo abaixo: </p>
+
+    <li>Aleatório</li>
+    <ul type=square>
+        <li>Projeto ODD</li>
+        <li>Projeto 002</li>
+    </ul>
+    <br>
+    <li>Controlados</li>
+    <ul type=square>
+        <li>Projeto AD'P</li>
+        <li>Projeto de Rotina</li>
+    </ul>
+<hr>
+    <p>Alteração de uma ordenação dentro da outra ordenação que está em uma outra ordenação</p>
+
+    <!--Os menus do site são feitos a partir desse código ou seguem uma lógica semelhante-->
+
+    <li>Aleatório</li>
+    <ul type=square>
+        <li>Projeto ODD</li>
+        <ul type="circle">
+            <li>Utiliza um valor mínimo de 3 carrinhos que pode conter diversos itens</li>
+        </ul>
+        <li>Projeto 002</li>
+        <ul type="circle">
+            <li>Criado para ajudar em casa, tudo que precisa é adicionado lá</li>
+        </ul>
+        <br>
+    </ul>
+    <li>Controlados</li>
+    <ul type=square>
+        <li>Projeto AD'P</li>
+        <ul type="circle">
+            <li>Adição de uma cédula, projeto temporário</li>
+        </ul>
+        <li>Projeto de Rotina</li>
+        <ul type="circle">
+            <li>Integrado para alterações consciente</li>
+        </ul>
+    </ul>
+</ol>
+
+<hr>
+
+<h2>Curiosidade</h2>
+<p>Foi aberto um pós para uso pessoal e testes que fiquei incitada a fazer enquanto estudava esse conteúdo em específico</p>
+
+<ol>
+    <li>Teste ocasional com <span style="color: #E07C3E">alterações de cor</span></li> <br>
+    <ul type="circle"><li style="color: #800000;">Minecraft está muito bom</li>
+       <li style="color: #00ff00;">Teste da cor verde</li>
+       <li style="color: #DAA520;">Teste da cor dourada</li>
+    </ul>
+</ol>
+
+<hr>
+
+<h2>Lista de Definições</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Linguagem e marcação para a criação do conteúdo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação do design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+</dl>
+</body>
+</html>

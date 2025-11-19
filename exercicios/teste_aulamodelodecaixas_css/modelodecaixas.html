@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .lado {
+            display: flex;
+        }
+        p {
+            color: rgb(7, 3, 54);
+        }
+        h4{
+            width: 90px;
+            height: 30px;
+            background-color: rgb(235, 235, 235);
+            border-width: 8px;
+            border-style: solid;
+            border-color: red;
+            padding: 10px;
+            outline-width: 15px;
+            outline-style: solid;
+            outline-color: blue;
+            margin: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Modelo de Caixas</h1>
+    <span class="lado">
+         <span><img src="c:\Users\danie\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Captura de tela 2025-09-04 143343.png" alt="exemplo de caixas" height="250px" width="400px">
+        </span>
+        <span>
+            <p>Todo conteúdo possui uma largura (width) e uma altura (height) e a esse conjunto de propriedades, damos o nome de box-size (tamanho da caixa). O tamanho da caixa não inclui as medidas de padding, border, outline e margin.</p>
+            <p>Depois do conteúdo e de seu tamanho, vamos nos focar na borda que fica em volta dele. Ela pode ter uma espessura, uma cor e um formato.</p>
+            <p>Entre a borda e o conteúdo - da borda para dentro - temos o preenchimento (padding) e da borda para fora, temos a margem (margin).</p>
+            <p>Entre a margem e a borda, podemos determinar o contorno (outline) que é muito pouco utilizado, mas existe. Ele é um traçado visual que podemos criar fora da borda e o cálculo da sua espessura faz parte da margem estabelecida.</p>
+        </span>
+    </span>
+    <div>
+        <span class="lado">
+            <span><h3>Exemplo</h3></span>
+            <span><h4>Olá, Mundo!</h4></span>
+        </span>
+        <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/16%20-%20Modelo%20de%20Caixas.pdf">Mais sobre o conteúdo</a>
+    </div>
+</body>
+</html>

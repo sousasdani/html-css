@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Código-fonte</h1>
+    <p>O comando document.getelementById('teste') é escrito em uma linguagem JavaScript.</p>
+    <p>O comando <code>document.getelementById('teste')</code> é escrito em uma linguagem JavaScript.</p>
+    
+    A diferença que demonstra nos dois se dá por conta de uma tag chamada &lt;code&gt;, através dela, <br> houve um espaçamento significativo entre o exenplo 1 e o exemplo 2, que está mais codificado.
+
+<hr>
+
+<p>Agora veremos um exemplo de código do Phytom usando o &lt;code&gt; e depois usando &lt;code&gt; + &lt;pre&gt; </p>
+
+<code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR')
+    else:
+        print(f'0 número {num} é ÍMPAR')
+    print('Fim de programa')
+</code>
+<p>Como podemos ver no primeiro exemplo o código não foi organizado com indentação, para isso deve-se envelopar dentro da tag &lt;pre&gt;</p>
+<pre>
+    <code>
+num = int(input('Digite um número'))
+if num % 2 == 0:
+    print(f'0 número {num} é PAR')
+else:
+    print(f'0 número {num} é ÍMPAR')
+print('Fim de programa')
+    </code>
+</pre>
+
+    <hr>
+
+    <h2>Citações:</h2>
+    <p><q>O espírito humano deve prevalecer sobre a tecnologia.</q> <br> - Albert Einstein</p>
+    <p>Segundo o Silvo Ferreira, no seu livro Quia prático de HTML5:</p>
+    <blockquote cite="https://books.google.com.br/books?id=gvV0icqoRsgC&printsec=frontcover&dq=html5+em+portugu%C3%AAs&hl=pt-BR&newbks=1&newbks_redir=1&sa=X&ved=2ahUKEwjOtc_e6O6MAxUmpZUCHSOXOewQ6AF6BAgFEAM">Se na página web houver algum bloco de citação devemos marcá-lo com a tag &lt;blockquote&gt;. Usamos essa tag para marcar citações longas, que podem possuir um ou mais parágrafos. São citações extraídas de revistas, jornais, livros ou outros sites.</blockquote> <!-- A tag "cite" serve para endereçar o link da frase que você copiou, isso não significa que vaiaparecer o link no seu site ou que alguém vai conseguir ver ele quando passar o mouse pela tela, não; nesse caso, ele vai mostrar para o computador de onde aquela frase está saindo, para manter os direitos daqueles que criaram o conteúdo. -->
+
+    <hr>
+
+    <h2>Abreviações</h2>
+        Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. 
+    <!--acima eu aprendi a dar o nome completo da abreviação apenas colocando o mouse em cima. eu particulamente não gostei, mas o professor disse que dava para mudar isso no CSS -->
+
+    <hr>
+
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="ltr">Isso inverte o texto, ou seja, sem utilidade alguma.</bdo></p> <mark style="background-color: rgb(194, 226, 226);">Da direita para a esquerda (invertido) ou da esquerda para a direita.</mark>
+    <p><bdo dir="rtl">Isso inverte o texto, ou seja, sem utilidade alguma.</bdo></p>
+</body>
+</html>

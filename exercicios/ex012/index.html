@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos com hospedagem própria</h1>
+    <p>Esses videos estão adicionados localmente em meu próprio site</p>
+
+    <h4>video mp4</h4>
+    <video src="midia/edicao01.mp4.mp4" width="500" controls></video>
+
+    <h4>video mov</h4>
+    <video src="midia/edicao01.mov.mov" width="500" controls></video>
+
+    <p>
+        Observação: Também existes outros tipos de vídeos, como o M4V, Webm, Ogg. <br>
+        Cada navegador tem o seu formato que pode ou não funcionar, o chrome aceita todos, mas dependendo do navegador a qual o usuário está acessando, pode ser que sua experiência seja bloqueada. <br>
+        Resumindo, para uma boa experiência é sempre bom colocar todos os formatos de videos, para que nenhum navegador fique de lado
+    </p>
+
+    <p>Exemplo: O navegador Safari não suporta o formato de vídeo ogv, e ele até tem um bom público, considerando que todo o proprietário de Iphone usa Safari. </p>
+
+    <p>A forma como vamos incluir todos os formatos de videos, funciona como na aula passada em que estivemos aprendendo a hospedar audio de diferentes formatos em nosso site. Para isso basta apenas usar o <mark>source src</mark></p>
+
+    <video controls width="500"
+        poster="midia-imagem/meu-video.png">
+        <source src="midia/edicao01.mp4.mp4" type="video/mp4">
+        <source src="midia/edicao01.mov.mov" type="video/mov">
+        <p>Seu navegador não é compatível com o reprodutor de video</p>
+    </video>
+
+    <p> Deve-se ficar ciente que quanto maior o tamanho do video, mais peso no bolso vai ter para o meu cliente quanto ao trafego de dados,principalmente se for algo hospedado. Então sempre que houver uma solicitação do tipo, é sempre bom deixar isso claro para o cliente.</p>
+
+    <p>Mas como nem tudo é ruim, vejamos a seguir uma forma de aliviar o bolso do cliente (Na verdade não vai custar nada alé do que o cliente já está pagando de hospedagem, o consumo de banda vai ser mínimo para o site):</p>
+
+    <h1>Incorporação de videos externos</h1>
+
+    <h4>Inserindo videos do youtube</h4>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=xjqGWsrSZDP7Z8LL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h4>Inserindo videos do vímeo</h4>
+
+    <iframe src="https://player.vimeo.com/video/722785316?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" title="2022 Game Animation Reel"></iframe>
+
+   <h3>Diferênças entre vimeo e Youtube: </h3>
+   <p>Desvantagens e Vantagem</p>
+   <ol>
+    <li> Vantagem - Vimeo: Qualidade de video</li>
+
+    <li>Desvantagem - Vimeo: Algorítmo não é tão bom. <br> <strong style="background-color: rgb(199, 199, 221);">Ou seja, se a internet não for muito boa, pode acabar dando umas travadinhas.</strong></li>
+
+    <li> Vantagem - Vimeo: A exibição é um pouco mais fluída e suas cores são um pouco melhores <br> <strong style="background-color: rgb(199, 199, 221);">Claro, a diferença é tão pouca que nem mesmo vale a pena pagar pelo vimeo.</strong></li>
+
+    <li>Existe uma limitação no vimeo que não tem no youtube <br> <strong style="background-color: rgb(199, 199, 221);">No final do video não aparece outras opções de video para assistir. Isso é bom, pois impede a aparição do video do concorrente.</strong></li>
+
+    <li>Desvantagem - Youtube: Colocar video somente se tiver a plena consciência de que qualquer pessoa vai poder ver o seu video.<br> <strong style="background-color: rgb(199, 199, 221);"> Até mesmo na opção <u style="color: tomato;">não listada</u> (o cara tem acesso ao video, só não tem acesso a busca do youtube, mas tem acesso para incorporar o video em qualquer site).</strong></li>
+<br>
+    <ul>
+        <li>Deve-se tomar muito cuidado com direitos autorias e não usar o que não tem permissão para usar.</li>
+    </ul>
+   </ol>
+
+   <p>Sites para incoporar videos</p>
+   <ul>
+       <li>Youtube: Videos públicos</li>
+       <li>Vimeo: Opção de videos privados</li>
+       <li>Google Drive: Opções de videos armazenado em nuvens </li>
+   </ul>
+
+
+</body>
+</html>

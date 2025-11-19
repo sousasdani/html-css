@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Texto</title>
+   
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / destaque</h2>
+    <p>Nesta frase, temos <b>um termo negrito</b> usando a tag &lt;b&gt; (Não semântica)</p>
+   <p> Na frase anterior, é usado em negrito, mas se reparar bem não tem tanto <br>
+     destaque quanto a tag abaixo que além de negrito, também destaca.</p>
+    <p>Nesta frase, temos um <strong>termo em negrito</strong> usando a tag &lt;strong&gt; (Semântica)</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (Não semântica)</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (Semântica)</p>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar <mark>um texto marcado</mark> com a tag &lt;mark&gt;</p>
+    <p>Quando vamos fazer algo pontual e de maneira específica, eu posso trazer uma função CSS para o próprio HTML, sem necessariamente abrir outro arquivo, exemplo:</p>
+    <p>
+        <mark style="background-color: rgb(207, 207, 168);"> Resumindo, se eu quiser mudar a cor padrão do <strong>&lt;mark&gt;</strong>, bata apenas colocar <strong>style = background-color</strong> logo depois de mark junto de um background color.</mark>
+    </p>
+    <p>Deve-se levar em conta que isso só vai funcionar se for para uma unica tag. Caso você tenha inúmeras tag &lt;mark&gt; e quer personalizar as cores de todas elas, existe uma forma melhor de agrupar elas do que fazer uma por uma. Nesse caso,só é ir abaixo da tag title que fica lá no início e abrir uma tag chamada style, dentro dessa tag, menciono o mark e só então aciono o background color</p>
+    <p>Exemplo:</p>
+    
+        <p style="color: #6b6d03;">&lt;style&gt; <br> mark { <br> background-color <br>} <br>&lt;/style&gt;</p>
+
+        <h2>Texto grande e pequeno</h2>
+        <p>Estamos criando um <big>texto em formato grande</big> e um <small>texto em formato pequeno</small> nesse paragráfo.</p>
+        <p>A tag &lt;big&gt; para dar um formato grande a frase está em absoleto, ou seja, está entrando em descontinuação, pois isso nós mesmo podemos alterar em CSS, enquanto a tag &lt;small&gt; , que transforma o texto em formato pequeno, não está em descontinuação.</p>
+
+        <h2>Texto deletado</h2>
+        <p>Podemos marcar <del>um texto como excluido</del> para indicar qiue ele pode ser lido, mas não considerado.</p>&lt;del&gt; &nbsp; &lt;/del&gt;
+
+        <h2>Texto inserido / sublinhado</h2>
+        <p>Podemos marcar <ins>um texto como inserido</ins> para dar ênfase e indicar que ele foi adicionado depois.</p> &lt;ins&gt; &nbsp; &lt;/ins&gt;
+        <p>Podemos marcar <u>um texto como sublinhado</u> com a tag não semântica que está prestes a morrer, &lt;u&gt;</p>
+
+        <h2>Texto subrescrito</h2>
+        <p>Para inserir coisas do tipo x<sup>20</sup>+3 <br>Ou seja, você vai elevar o numero ao X. &lt;sup&gt; &nbsp; &lt;/sup&gt;</p>
+
+        <h2>Texto subscrito</h2>
+        <p>Para inserir coisas do tipo H<sub>2</sub>O <br> Ou seja, você vai descer o 2, para ele se comportar de acordo com o elemento. &lt;sub&gt; &nbsp; &lt;/sub&gt; </p>
+</body>
+</html>

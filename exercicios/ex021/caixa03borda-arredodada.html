@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizada</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            border: 10px solid transparent;
+            padding: 10px;
+            border-image-source: url(borda.png.png);
+            border-image-slice: 26;
+            border-image-repeat: repeat;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+        h2 {
+            font-size: 25px;
+            border: 8px solid transparent;
+            padding: 5px;
+            border-image: url(star.png.jpeg) 51 repeat;
+            margin: 25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de borda</h1>
+    <p>Essa borda acima foi feito com uma imagem propriamente criada por mim, para usar uma imagem é necessário ela estar em png e usar a propriedade "border-image-source: url(nome descrito na imagem) na própria folha de estilo, não é necessário fazer uso do HTMl, exceto o texto ou título que for usar para decorar.</p>
+    <h2>Exemplo pessoal</h2>
+</body>
+</html>
