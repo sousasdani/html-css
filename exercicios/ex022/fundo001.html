@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+        body {
+            background-image: url('imagens/wallpaper005.jpg');
+        }
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid rgb(58, 54, 54);
+            border-radius: 10px;
+            background-color: rgb(228, 217, 217);
+            width: 250px;
+            height: 250px;
+        }
+
+        div#q1 {
+            background-color: rgb(192, 153, 190);
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, #233a65, #263c86);
+        }
+
+        div#q3 {
+            background-image: url('imagens/pattern003.png');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
