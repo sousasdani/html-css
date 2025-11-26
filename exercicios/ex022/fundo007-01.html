@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Posicionamento de Caixa</title>
+    <style>
+        body {
+            background-color: #e7cfcf;
+        }
+
+        .main {
+            border: 1px solid green;
+            border-radius: 5px;
+            padding: 10px;
+            height: 94vh;
+            background-color: #e0bdc8;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 30px;
+            color: rgb(168, 127, 192);
+            text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.788);
+        }
+
+        .container {
+            border: 1px solid transparent;
+            box-shadow: 0.9px 0.9px rgba(206, 167, 167, 0.164);
+            border-radius: 5px;
+            width: 500px;
+            height: 250px;
+            background-color: #d4acb9a6;
+            position: relative;
+            margin: auto;
+        }
+
+        .content {
+            border: 2px solid rgba(207, 63, 176, 0.589);
+            border-radius: 8px;
+            width: 250px;
+            height: 125px;
+            background-color: #e0cdcb;
+            position: absolute;
+            left: 25%;
+            top: 25%;
+        }
+
+        .content p {
+            line-height: 20px;
+            color: rgba(63, 8, 8, 0.788);
+        }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <h3 class="title">Teste na escrita</h3>
+        <section class="container">
+            <article class="content">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur laudantium similique dolorem pariatur aut!</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
