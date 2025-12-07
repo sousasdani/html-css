@@ -27,19 +27,41 @@
             background-color: #ddc29e;
         }
 
-        .table-two {
+        .table-my {
             border-collapse: collapse;
         }
 
-        .table-two th {
+        .table-my th {
             background-color: #484d80a8;
             color: #f5f5dc;
             text-shadow: 0.9px 0.9px 0 black;
         }
 
-        .table-two th, td {
+        .table-my th, td {
             border: 1px solid #000000;
             padding: 10px;
+        }
+
+        hr {
+            margin: 40px;
+            box-shadow: 2px 2px 2px rgb(109, 105, 105);
+        }
+
+        .table-two {
+        width: 100%;
+        border-collapse: collapse;
+        height: 400px;
+        }
+
+        .table-two td {
+        border: 1px solid #000000;
+        padding: 8px;
+        text-align: center;
+        vertical-align: middle;
+        }
+
+        .table-two td.number {
+            text-align: right;
         }
     </style>
 </head>
@@ -51,25 +73,21 @@
             <td>B1</td>
             <td>C1</td>
         </tr>
-
         <tr>
             <td>A2</td>
-            <td class="given-t">B3</td>
+            <td class="given-t">B2</td>
             <td>C3</td>
         </tr>
-
         <tr>
-            <td>C1</td>
-            <td>C2</td>
+            <td>A3</td>
+            <td>B3</td>
             <td>C3</td>
         </tr>
-
         <tr>
             <td>A4</td>
             <td>B4</td>
             <td>C4 </td>
         </tr>
-
         <tr>
             <td>A5</td>
             <td>B5</td>
@@ -80,7 +98,7 @@
 
     <h2>Minha versão de tabela</h2>
 
-    <table class="table-two">
+    <table class="table-my">
         <tr>
             <th>Horário</th>
             <th>Segunda-feira</th>
@@ -103,7 +121,29 @@
             <td>Descanso</td>
         </tr>
     </table>
-</body>
-</html>
+
+    <hr>
+
+    <h1>Minha segunda de tabela</h1>
+    <p>Incluindo alinhamento do conteúdo na tabela, horizontal e vertical.</p>
+    <table class="table-two">
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td class="number">C1</td>
+        </tr>
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td class="number">C3</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="number">C3</td>
+        </tr>
+    </table>
+
+    <hr>
 </body>
 </html>
