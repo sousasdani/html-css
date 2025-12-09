@@ -19,11 +19,17 @@
             width: 450px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
         }
 
         th, td {
             border: 1px solid #000000;
             padding: 10px;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
         }
 
         .pq {
@@ -49,6 +55,11 @@
         tbody > tr:nth-child(odd) {
             background-color: #c4bebe;
         }
+
+        p {
+            text-align: justify;
+            line-height: 1.7;
+        }
     </style>
 </head>
 <body>
@@ -58,8 +69,8 @@
         <caption>Populações das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Unidade federativa</th>
-                <th class="pq">População</th>
+                <th scope="col">Unidade federativa</th>
+                <th scope="col" class="pq">População</th>
             </tr>
         </thead>
         <tbody>
@@ -174,10 +185,13 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <th  class="number"><strong>213 421 037</strong></th>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempora tempore soluta rerum facilis ratione sint autem quas similique quasi, optio laboriosam error. Alias quaerat id explicabo dolorum, est soluta.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eveniet fugit id eos at magnam! Facere nemo dolores reiciendis necessitatibus a, pariatur error? Veritatis quibusdam sunt officia voluptatem, ullam sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos exercitationem odio rem culpa id praesentium quos dolorum explicabo. Laboriosam eos blanditiis fuga architecto dolor iusto nostrum atque odio ut odit.</p>
 </body>
 </html>
