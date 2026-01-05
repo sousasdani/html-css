@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Exemplo</title>
+</head>
+<body>
+    <h1>Formulário de exemplo</h1>
+    <p>Formulário destinada apenas por uma curiosidade, aqui estou usando o atributo for no output, visualmete não vai mudar nada.</p>
+
+    <form action="cadastro.php" required method="get">
+        <div style="margin: 5px;">
+            <label for="">Número 1: </label>
+            <input type="number" name="numero1" id="num1" oninput="result.innerHTML = Number (num1.value) - Number (num2.value)">
+        </div>
+
+        <div style="margin: 5px;">
+            <label for="">Número 2: </label>
+            <input type="number" name="numero2" id="num2" oninput="result.innerHTML = Number (num1.value) - Number (num2.value)">
+        </div>
+
+        <div style="margin: 5px;">
+            <label for="result">Soma: </label>
+            <output id="result" name="resultado" for="num1 num2">0</output>
+        </div>
+    </form>
+</body>
+</html>

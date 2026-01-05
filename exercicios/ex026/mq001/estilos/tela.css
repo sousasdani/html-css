@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Media squiry para telas */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+header {
+    background-color: #c7ebd0;
+    height: 1%;
+}
+
+header h1 {
+    padding: 15px;
+    text-align: center;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: #c2e4cbe8;
+}
+
+menu li {
+    display: inline-block;
+    background-color: #b5d4bde7;
+    padding: 10px;
+}
+
+article {
+    display: block;
+    margin: auto;
+    width: 40%;
+}
+
+article h2, p {
+    padding: 10px;
+}

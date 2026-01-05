@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* Media Squiry para impressoras */
+
+* {
+    margin: 10px;
+    padding: 8px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    font-size: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'Esse artigo foi impresso através do site www.noticiad.com';
+    color: rgb(16, 73, 196);
+}

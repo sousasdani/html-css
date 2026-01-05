@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 10</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="nascimento">Em que ano você nasceu? </label>
+            <input type="number" name="nascimento" id="nascimento" oninput="calIdade ()">
+        </p>
+
+        <p>
+            <label for="idade">Sua idade é: </label>
+            <output id="idade">0</output>
+        </p>
+    </form>
+
+    <script>
+        function calIdade () {
+            let atual = new Date () .getFullYear ()
+            idade.innerHTML = Number (atual) - Number (nascimento.value)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 9</title>
+</head>
+<body>
+    <form action="cadstro.php">
+        <p>
+            <label for="numb">Número: </label>
+            <input type="range" name="numero" id="numb" min="0" max="10" value="5" oninput="valor.innerHTML = Number (numb.value)">
+            <output id="valor">5</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
