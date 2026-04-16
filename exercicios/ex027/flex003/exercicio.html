@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de fixação</title>
+    <style>
+        .resol1 {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .item {
+            width: 150px;
+            height: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        #c1 {
+            background-color: #4C8A5E;
+        }
+
+        #c2 {
+            background-color: #8A4C79;
+        }
+
+        #c3 {
+            background-color: #466D51;
+        }
+
+        #c4 {
+            background-color: #BD519F;
+        }
+
+        #c5 {
+            background-color: #45925A;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <h3>Exercício 1</h3>
+            <p>Crie um contêiner com 5 caixas coloridas utilizano os seguintes propriedades e diminua a largura da tela:</p>
+            <ul>
+                <li>flex-direction: row-reverse;</li>
+                <li>flex-wrap: wrap;</li>
+            </ul>
+
+            <div class="resol1">
+                <div class="item" id="c1">Caixa 1</div>
+                <div class="item" id="c2">Caixa 2</div>
+                <div class="item" id="c3">Caixa 3</div>
+                <div class="item" id="c4">Caixa 4</div>
+                <div class="item" id="c5">Caixa 5</div>
+            </div>
+    </div>
+
+    <div>
+        <h3>Exercício 2</h3>
+        <p>Imagine que você tem um contêiner pai com 5 itens (caixas de A a E). Você precisa que esses itens sejam organizados em coluna, mas quer que eles comecem de baixo para cima. Além disso, se o espaço da altura acabar, eles devem quebrar para uma nova coluna à direita.</p>
+            <p>Sua tarefa:</p>
+            <p>1) Escreva a propriedade única flex-flow que defina a direção como coluna reversa e permita o empacotamento (quebra de linha/coluna).</p>
+
+            <p style="color: blue;">Resposta: <br>flex-flow: column-reverse wrap;</p>
+
+            <p>2) Ao usar o wrap em uma column-reverse, o item que "sobrar" vai para o lado seguindo o eixo transversal. Qual propriedade você usou para simplificar seu código?</p>
+
+            <p style="color: blue;">Resposta: <br>Foi usado a propriedade flex-flow, que é uma shorthand para as proprieadades <strong>flex-direction</strong> e <strong>flex-wrap</strong>.</p>
+    </div>
+</body>
+</html>
