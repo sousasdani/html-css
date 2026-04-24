@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox centralizado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(157, 182, 206);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: rgb(148, 176, 192);
+            height: 90vh;
+            width: 90vw;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            background-color: rgb(180, 157, 126);
+            height: 50%;
+            width: 60%;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 28px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        .formc {
+        width: 300px;
+        background-color: rgba(104, 68, 21, 0.26);
+        border: 1px solid transparent;
+        border-radius: 10px;
+        margin: auto;
+        color: #ffffff;
+        padding: 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Tela de Login</h1>
+
+            <div class="formc">
+                <form action="cadastro.php" method="post">
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" required placeholder="email">
+                    </div>
+                    <div>
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" required minlength="8" maxlength="15" placeholder="mínimo 8 caracteres">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
