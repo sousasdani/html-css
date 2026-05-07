@@ -29,29 +29,70 @@
 
         section {
             background-color: rgb(180, 157, 126);
+            border-radius: 10px;
             height: 50%;
             width: 60%;
         }
 
         h1 {
-            color: #ffffff;
+            color: #11101093;
             font-size: 28px;
             text-align: center;
-            padding: 5px;
-        }
-
-        form {
-            padding: 20px;
-        }
+            text-shadow: -2px 1px 0px #7a787865;
+            padding: 15px;
+        }   
 
         .formc {
-        width: 300px;
-        background-color: rgba(104, 68, 21, 0.26);
+        width: 70%;
+        background-color: #68441542;
         border: 1px solid transparent;
         border-radius: 10px;
         margin: auto;
         color: #ffffff;
         padding: 15px 20px;
+        }
+
+        .space {
+            margin: 5px;
+        } 
+
+        input#email {
+            background-color: #f8f5f565;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        input#email::placeholder {
+            color: #443f3fe1;
+        }
+
+        input#senha {
+            background-color: #f8f5f565;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            padding: 5px;
+            width: 100%;
+        }
+
+        input#senha::placeholder {
+            color: #443f3fe1;
+        }
+
+        #enviar {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        input#enviar {
+            background-color: #f6fde393;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            color: #2b2828e1;
+            padding: 5px;
         }
     </style>
 </head>
@@ -62,16 +103,16 @@
 
             <div class="formc">
                 <form action="cadastro.php" method="post">
-                    <div>
-                        <label for="email">E-mail:</label>
-                        <input type="email" name="email" id="email" required placeholder="email">
+                    <div class="space">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" required placeholder="E-mail">
+                    </div>
+                    <div class="space">
+                        <label for="senha"></label>
+                        <input type="password" name="senha" id="senha" required minlength="8" maxlength="15" placeholder="Senha">
                     </div>
                     <div>
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" id="senha" required minlength="8" maxlength="15" placeholder="mínimo 8 caracteres">
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
+                        <input type="submit" value="Enviar" id="enviar">
                     </div>
                 </form>
             </div>
